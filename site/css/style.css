@@ -40,40 +40,49 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-/* ===== Work-in-progress ribbon ===== */
+/* ===== Work-in-progress ribbon =====
+ * A 210×210 corner box at top-right clips the ends of a rotated banner so
+ * the text stays inside the viewport. Empirically tuned: top/width chosen
+ * so "Work in progress" at this font size never touches the top edge. */
 .wip-ribbon {
-  position: fixed; z-index: 200;
-  top: 34px; right: -56px;
-  width: 220px;
+  position: fixed; z-index: 300;
+  top: 0; right: 0;
+  width: 210px; height: 210px;
+  overflow: hidden;
+  text-decoration: none;
+  pointer-events: none;
+}
+.wip-ribbon > span {
+  position: absolute; display: block;
+  left: 50%; top: 58px;
+  width: 290px;
+  margin-left: -145px;       /* = width / 2 to centre before rotate */
   padding: 9px 0;
   text-align: center;
+  white-space: nowrap;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  pointer-events: none;
   background: repeating-linear-gradient(
     135deg,
     #da5d45 0, #da5d45 14px,
     #b54a33 14px, #b54a33 28px
   );
   color: #fff;
-  font-size: .8rem; font-weight: 800; letter-spacing: .18em;
-  text-transform: uppercase; text-decoration: none;
-  transform: rotate(45deg);
+  font-size: .82rem; font-weight: 800; letter-spacing: .18em;
+  text-transform: uppercase;
   box-shadow: 0 4px 14px rgba(0, 0, 0, .25),
               inset 0 -1px 0 rgba(0, 0, 0, .2),
               inset 0 1px 0 rgba(255, 255, 255, .2);
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 }
-.wip-ribbon::before,
-.wip-ribbon::after {
-  content: ""; position: absolute; z-index: -1;
-  border: 4px solid #8c3a28;
-  border-top-color: transparent; border-right-color: transparent;
-  bottom: -4px;
-}
-.wip-ribbon::before { left: 0;  }
-.wip-ribbon::after  { right: 0; transform: scaleX(-1); }
-.wip-ribbon:hover { filter: brightness(1.05); }
+.wip-ribbon:hover > span { filter: brightness(1.05); }
 @media (max-width: 560px) {
-  .wip-ribbon { top: 22px; right: -70px; width: 200px; padding: 7px 0;
-                font-size: .7rem; letter-spacing: .14em; }
+  .wip-ribbon { width: 170px; height: 170px; }
+  .wip-ribbon > span {
+    top: 46px; width: 240px; margin-left: -120px; padding: 7px 0;
+    font-size: .72rem; letter-spacing: .14em;
+  }
 }
 
 html { scroll-behavior: smooth; }
