@@ -1,0 +1,20 @@
+[project]
+name = "forrt-bibliography"
+version = "0.1.0"
+description = "Bibliography of FORRT contributors' open-scholarship work, from OpenAlex."
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "gspread>=6.0",
+    "google-auth>=2.30",
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

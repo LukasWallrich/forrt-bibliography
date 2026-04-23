@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-04-23T22:20:31+00:00",
+  "sources": {
+    "openalex": "https://api.openalex.org",
+    "clusters_doc": "https://docs.google.com/document/d/1_TRh7z3Bv_tdxGqjdWMm4kfQerTYvYw3e4wvQLNpTDQ/export?format=txt",
+    "contributors": "FORRT Tenzing sheets"
+  },
+  "totals": {
+    "works_in_db_raw": 24995,
+    "works_in_db": 21663,
+    "open_works": 2894,
+    "contributors": 425
+  },
+  "dedup": {
+    "dropped_preprint_vs_journal": 1861,
+    "dropped_preprint_vs_preprint": 345,
+    "dropped_zero_cite_mirror": 1126,
+    "kept": 21663,
+    "input": 24995
+  }
+}

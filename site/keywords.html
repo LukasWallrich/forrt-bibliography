@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classification keywords — FORRT Bibliography</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .kw-page { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .kw-intro { color: var(--ink-dim); max-width: 65ch; margin-bottom: 2rem; }
+    .kw-cluster { margin-bottom: 2rem; padding: 1.25rem 1.4rem; background: var(--bg-card);
+                  border: 1px solid var(--line); border-radius: var(--radius);
+                  border-left: 4px solid var(--line-strong); }
+    .kw-cluster h2 { font-size: 1.25rem; margin: 0 0 .25rem; color: var(--deep); }
+    .kw-meta { font-size: .85rem; color: var(--ink-faint); margin-bottom: .85rem; }
+    .kw-section-title { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+                        color: var(--ink-faint); margin: 1rem 0 .5rem; font-weight: 600; }
+    .kw-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+    .kw-list li.sub { padding: .25rem .6rem; border-radius: var(--radius-sm);
+                      background: var(--bg); color: var(--ink-dim); font-size: .85rem;
+                      border: 1px solid var(--line); }
+    .kw-list li.kw { padding: .25rem .55rem; border-radius: 999px; font-size: .78rem;
+                     font-family: var(--font-mono); }
+    .kw-cluster[data-cluster="1"]  { border-left-color: var(--c1-ink); }
+    .kw-cluster[data-cluster="2"]  { border-left-color: var(--c2-ink); }
+    .kw-cluster[data-cluster="3"]  { border-left-color: var(--c3-ink); }
+    .kw-cluster[data-cluster="4"]  { border-left-color: var(--c4-ink); }
+    .kw-cluster[data-cluster="5"]  { border-left-color: var(--c5-ink); }
+    .kw-cluster[data-cluster="6"]  { border-left-color: var(--c6-ink); }
+    .kw-cluster[data-cluster="7"]  { border-left-color: var(--c7-ink); }
+    .kw-cluster[data-cluster="8"]  { border-left-color: var(--c8-ink); }
+    .kw-cluster[data-cluster="9"]  { border-left-color: var(--c9-ink); }
+    .kw-cluster[data-cluster="10"] { border-left-color: var(--c10-ink); }
+    .kw-cluster[data-cluster="11"] { border-left-color: var(--c11-ink); }
+    .kw-cluster[data-cluster="1"]  .kw-list li.kw { background: var(--c1-bg);  color: var(--c1-ink); }
+    .kw-cluster[data-cluster="2"]  .kw-list li.kw { background: var(--c2-bg);  color: var(--c2-ink); }
+    .kw-cluster[data-cluster="3"]  .kw-list li.kw { background: var(--c3-bg);  color: var(--c3-ink); }
+    .kw-cluster[data-cluster="4"]  .kw-list li.kw { background: var(--c4-bg);  color: var(--c4-ink); }
+    .kw-cluster[data-cluster="5"]  .kw-list li.kw { background: var(--c5-bg);  color: var(--c5-ink); }
+    .kw-cluster[data-cluster="6"]  .kw-list li.kw { background: var(--c6-bg);  color: var(--c6-ink); }
+    .kw-cluster[data-cluster="7"]  .kw-list li.kw { background: var(--c7-bg);  color: var(--c7-ink); }
+    .kw-cluster[data-cluster="8"]  .kw-list li.kw { background: var(--c8-bg);  color: var(--c8-ink); }
+    .kw-cluster[data-cluster="9"]  .kw-list li.kw { background: var(--c9-bg);  color: var(--c9-ink); }
+    .kw-cluster[data-cluster="10"] .kw-list li.kw { background: var(--c10-bg); color: var(--c10-ink); }
+    .kw-cluster[data-cluster="11"] .kw-list li.kw { background: var(--c11-bg); color: var(--c11-ink); }
+  </style>
+</head>
+<body>
+
+<a class="wip-ribbon" href="https://github.com/forrtproject" title="This site is under active development" aria-label="Work in progress">
+  <span>Work in progress</span>
+</a>
+
+<header class="site-nav">
+  <a href="index.html" class="brand"><span class="brand-mark">F</span><span class="brand-name">FORRT Bibliography</span></a>
+  <nav>
+    <a href="index.html#browse">Browse</a>
+    <a href="index.html#contributors">Contributors</a>
+    <a href="index.html#network">Network</a>
+    <a href="index.html#about">About</a>
+  </nav>
+  <div class="updated" id="updated-badge"></div>
+</header>
+
+<main class="kw-page">
+  <h1 style="font-size: 2.2rem; color: var(--deep); margin: 0 0 .4rem;">Classification keywords</h1>
+  <p class="kw-intro">
+    These are the keywords the build pipeline uses to decide whether a work
+    counts as "open scholarship" and which FORRT cluster(s) it belongs to. A
+    work is tagged with a cluster when its title or abstract contains any of
+    that cluster's keywords (case-insensitive, word-boundary match). Tweak
+    them in <code>scripts/build_clusters.py</code> — specifically the
+    <code>EXTRA_KEYWORDS</code> dict and <code>ALLOWED_SINGLES</code> set.
+  </p>
+  <div id="kw-root"></div>
+</main>
+
+<footer>
+  <p>Keywords derived from FORRT's <a href="https://docs.google.com/document/d/1_TRh7z3Bv_tdxGqjdWMm4kfQerTYvYw3e4wvQLNpTDQ" target="_blank" rel="noopener">Clusters v4.1</a> document.</p>
+</footer>
+
+<script>
+(async () => {
+  const [clustersRes, metaRes] = await Promise.all([
+    fetch("data/clusters.yaml.json").catch(() => null),
+    fetch("data/meta.json"),
+  ]);
+  const meta = await metaRes.json();
+  document.getElementById("updated-badge").textContent =
+    "Last updated: " + new Date(meta.generated_at).toLocaleDateString(
+      undefined, { year: "numeric", month: "short", day: "numeric" });
+
+  // Pull the cluster keywords from a dedicated JSON (written by build_site.py).
+  const r = await fetch("data/keywords.json");
+  const d = await r.json();
+  const root = document.getElementById("kw-root");
+  const esc = (s) => s.replace(/[&<>"']/g,
+    (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+  root.innerHTML = d.clusters.map((c) => `
+    <section class="kw-cluster" data-cluster="${c.number}">
+      <h2>${c.number}. ${esc(c.name)}</h2>
+      <div class="kw-meta">${c.sub_clusters.length} sub-clusters · ${c.keywords.length} keywords</div>
+
+      <div class="kw-section-title">Sub-clusters</div>
+      <ul class="kw-list">${c.sub_clusters.map(s => `<li class="sub">${esc(s)}</li>`).join("")}</ul>
+
+      <div class="kw-section-title">Keywords (matched against title + abstract)</div>
+      <ul class="kw-list">${c.keywords.map(k => `<li class="kw">${esc(k)}</li>`).join("")}</ul>
+    </section>
+  `).join("");
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORRT Bibliography — Open Scholarship by FORRT Contributors</title>
+  <meta name="description" content="A searchable bibliography of open-scholarship publications by FORRT contributors, powered by OpenAlex and classified against FORRT's Clusters taxonomy.">
+  <link rel="preconnect" href="https://api.openalex.org">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f172a'/%3E%3Ctext x='16' y='22' font-family='ui-sans-serif' font-size='18' font-weight='700' text-anchor='middle' fill='%23fde68a'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js" defer></script>
+  <script src="js/app.js" type="module"></script>
+</head>
+<body>
+
+<a class="wip-ribbon" href="https://github.com/forrtproject" title="This site is under active development" aria-label="Work in progress">
+  <span>Work in progress</span>
+</a>
+
+<header class="site-nav">
+  <a href="#top" class="brand"><span class="brand-mark">F</span><span class="brand-name">FORRT Bibliography</span></a>
+  <nav>
+    <a href="#browse">Browse</a>
+    <a href="#contributors">Contributors</a>
+    <a href="#network">Network</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="updated" id="updated-badge" title="When this site was last refreshed from OpenAlex"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Community bibliography · powered by OpenAlex</span>
+      <h1>Open-scholarship work <br>co-authored by <span class="accent">FORRT</span> contributors</h1>
+      <p class="lede">
+        A living catalogue of publications that list at least one FORRT
+        contributor among their authors, continuously refreshed from OpenAlex
+        and classified against FORRT's
+        <a href="https://forrt.org/" target="_blank" rel="noopener">Clusters taxonomy</a>
+        of open, reproducible science.
+      </p>
+      <div class="hero-stats" id="hero-stats">
+        <!-- Populated by JS -->
+      </div>
+      <div class="cluster-strip" id="cluster-strip" aria-hidden="true"></div>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
+  </section>
+
+  <section class="dashboard">
+    <div class="grid">
+      <div class="card card-chart">
+        <header>
+          <h2>Publications by year</h2>
+          <p>Open-scholarship works vs. all co-authored works, 2000 onwards</p>
+        </header>
+        <div class="chart-wrap"><canvas id="year-chart"></canvas></div>
+      </div>
+      <div class="card card-clusters">
+        <header>
+          <h2>FORRT clusters</h2>
+          <p>Click a cluster to filter the bibliography</p>
+        </header>
+        <ol class="cluster-bars" id="cluster-bars"></ol>
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <div class="spotlight-head">
+        <h2>Spotlight</h2>
+        <p>Highly-cited open-scholarship works co-authored by FORRT contributors, and the venues where this community publishes most.</p>
+      </div>
+      <div class="spotlight-grid">
+        <div class="spotlight-carousel card">
+          <div class="carousel-track" id="carousel-track" aria-live="polite"></div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" id="carousel-prev" aria-label="Previous">&larr;</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button type="button" class="carousel-btn" id="carousel-next" aria-label="Next">&rarr;</button>
+          </div>
+        </div>
+        <aside class="spotlight-aside card">
+          <h3>Top venues</h3>
+          <ol class="venue-list" id="venue-list"></ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="browse" class="browse">
+    <div class="section-head">
+      <h2>Browse publications</h2>
+      <p>Every work co-authored by at least one FORRT contributor that matches one or more FORRT cluster keywords. Searches cover title, authors and venue.</p>
+    </div>
+
+    <div class="filters">
+      <label class="filter filter-search">
+        <span>Search title, author, venue</span>
+        <input id="search-input" type="search"
+               placeholder="e.g. registered report, Nosek, Psychological Science…" autocomplete="off">
+      </label>
+      <label class="filter">
+        <span>Year</span>
+        <select id="year-select"><option value="">All years</option></select>
+      </label>
+      <label class="filter filter-check">
+        <input id="oa-only" type="checkbox">
+        <span>Open access only</span>
+      </label>
+      <label class="filter">
+        <span>Sort</span>
+        <select id="sort-select">
+          <option value="year-desc">Newest first</option>
+          <option value="cited-desc">Most cited</option>
+          <option value="year-asc">Oldest first</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="cluster-chips-wrap">
+      <div class="cluster-chips" id="cluster-chips" role="group" aria-label="Filter by cluster"></div>
+      <div class="result-count" id="result-count"></div>
+    </div>
+
+    <ol class="results" id="results"></ol>
+    <div class="results-more">
+      <button id="show-more" type="button">Show more</button>
+    </div>
+  </section>
+
+  <section id="contributors" class="contributors">
+    <div class="section-head">
+      <h2>FORRT contributors</h2>
+      <p>Researchers listed on at least one FORRT Tenzing sheet, ordered by number of open-scholarship works.</p>
+    </div>
+    <div class="contrib-filters">
+      <input id="contrib-search" type="search" placeholder="search contributors…" autocomplete="off">
+      <span id="contrib-count" class="muted"></span>
+    </div>
+    <ul class="contrib-grid" id="contrib-grid"></ul>
+    <div class="results-more">
+      <button id="contrib-more" type="button">Show more</button>
+    </div>
+  </section>
+
+  <section id="network" class="network">
+    <div class="section-head">
+      <h2>Co-authorship network</h2>
+      <p>Edges connect FORRT contributors who have co-authored an open-scholarship work. Node size scales with open-scholarship output.</p>
+    </div>
+    <div class="network-search-wrap">
+      <input id="network-search" type="search" placeholder="Search for a contributor…" autocomplete="off">
+      <span id="network-search-count" class="muted"></span>
+    </div>
+    <div class="network-wrap" id="network-wrap"></div>
+    <div class="network-legend" id="network-legend"></div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-head">
+      <h2>About this bibliography</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <h3>How it's built</h3>
+        <p>Contributors come from the Tenzing credit sheets that power
+          <a href="https://forrt.org/contributions" target="_blank" rel="noopener">forrt.org/contributions</a>.
+          For each contributor with an ORCID, we query
+          <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex</a>
+          and classify every work by matching its title and abstract against
+          keyword lists derived from FORRT's
+          <a href="https://docs.google.com/document/d/1_TRh7z3Bv_tdxGqjdWMm4kfQerTYvYw3e4wvQLNpTDQ" target="_blank" rel="noopener">Clusters v4.1</a>
+          taxonomy.</p>
+      </div>
+      <div>
+        <h3>Caveats</h3>
+        <ul>
+          <li>Keyword matching is imperfect. Works may appear under multiple
+            clusters or be missed if they use unusual vocabulary.
+            <a href="keywords.html">View the keyword list →</a></li>
+          <li>OpenAlex coverage varies by discipline; some works (esp.
+            book chapters, older conference papers) may be absent.</li>
+          <li>Co-authorship edges are computed on open-scholarship works
+            only, to keep the graph legible.</li>
+          <li>Pre-2000 publication years are not shown in the chart —
+            OpenAlex backfill is unreliable that far back.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Source &amp; updates</h3>
+        <p>This site is generated by a small Python pipeline and rebuilt
+          weekly. Source code and the pipeline are on GitHub. Metadata was
+          last refreshed: <span id="updated-inline"></span>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Metadata: <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex</a> · Contributors: <a href="https://forrt.org/contributions" target="_blank" rel="noopener">FORRT Tenzing</a> · Taxonomy: <a href="https://forrt.org/" target="_blank" rel="noopener">FORRT Clusters v4.1</a></p>
+</footer>
+
+</body>
+</html>

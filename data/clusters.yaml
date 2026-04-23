@@ -1,0 +1,356 @@
+source: https://docs.google.com/document/d/1_TRh7z3Bv_tdxGqjdWMm4kfQerTYvYw3e4wvQLNpTDQ/export?format=txt
+clusters:
+- number: 1
+  name: Replication Crisis and Credibility Revolution
+  sub_clusters:
+  - History of the replication crisis & credibility revolution
+  - 'Scientific Misconduct: Fabrication and Falsification'
+  - Questionable research practices & their prevalence
+  - Collection of large scale replications
+  - Proposed science improvement initiatives on statistics, measurement, teaching, data sharing, code
+    sharing, pre-registration, & replication
+  - Ethical considerations for improved practices
+  - Ongoing debates (e.g., incentives for and against open science practices)
+  keywords:
+  - replication crisis
+  - credibility revolution
+  - reproducibility crisis
+  - open science
+  - open scholarship
+  - questionable research practices
+  - qrp
+  - replication
+- number: 2
+  name: Conceptual and Statistical Knowledge
+  sub_clusters:
+  - Effect sizes, statistical power, simulations, & confidence intervals.
+  - Exploratory and confirmatory analyses
+  - Limitations and benefits of NHST, Bayesian & Likelihood approaches.
+  - Philosophy of science
+  - Questionable measurement practices (QMPs), validity & reliability issues.
+  - Research design, sampling methods, & its implications for inferences.
+  - The logic of null hypothesis testing, p-values, Type I and II errors (and when and why they might
+    happen).
+  keywords:
+  - statistical power
+  - effect size
+  - p-value
+  - p values
+  - null hypothesis significance testing
+  - nhst
+  - confidence interval
+  - confidence intervals
+  - bayesian statistics
+  - bayesian inference
+  - questionable measurement practices
+  - measurement validity
+- number: 3
+  name: Ways of Working
+  sub_clusters:
+  - Adversarial collaborations
+  - Big team science
+  - Community science
+  - Environmental sustainability (e.g. conference travel, high performance computing, etc.)
+  - Participatory research
+  - Public and Private Partnerships
+  - Reflexivity and positionality
+  - Research with students (under- and graduate)
+  - Science communication and public outreach
+  - Slow Science/Slow Scholarship
+  - Types of academic, non-academic, & alt-academic positions
+  keywords:
+  - big team science
+  - many labs
+  - adversarial collaboration
+  - community science
+  - participatory research
+  - citizen science
+  - science communication
+  - public engagement with science
+  - slow science
+  - slow scholarship
+  - reflexivity
+  - positionality
+- number: 4
+  name: Pre-analysis Planning
+  sub_clusters:
+  - Preregistration
+  - Purpose of pre-analysis planning
+  - Registered reports
+  - Study Design
+  - Understanding the types of preregistration and writing one.
+  keywords:
+  - preregistration
+  - pre-registration
+  - pre registration
+  - registered report
+  - registered reports
+  - pre-analysis plan
+  - pre analysis plan
+  - analysis plan
+- number: 5
+  name: Transparency and reproducibility in computation and analysis
+  sub_clusters:
+  - Analysis and reporting in qualitative research
+  - Computational reproducibility
+  - Free and open source software
+  - Research software engineering
+  - Tools to check yourself and others
+  keywords:
+  - computational reproducibility
+  - reproducible analysis
+  - reproducible workflow
+  - reproducible research
+  - open source software
+  - free and open source software
+  - research software engineering
+  - research software
+  - containerisation
+  - containerization
+- number: 6
+  name: FAIR data and materials
+  sub_clusters:
+  - Ethical, privacy and security considerations
+  - Licenses and reuse
+  - Metadata standards
+  - Reasons to share
+  - Repositories
+  - Research data management
+  - FAIR principles applied to Education & Training
+  keywords:
+  - fair data
+  - fair principles
+  - fair data principles
+  - findable accessible interoperable reusable
+  - research data management
+  - data management plan
+  - metadata standards
+  - data repository
+  - data repositories
+  - data stewardship
+- number: 7
+  name: Publication Sharing
+  sub_clusters:
+  - Alternatives to legacy journals
+  - Different shades of open access
+  - Open peer review
+  - Preprints and postprints
+  - Rights retention strategies
+  - Why open access?
+  keywords:
+  - open access
+  - gold open access
+  - green open access
+  - diamond open access
+  - open peer review
+  - post-publication peer review
+  - preprint
+  - preprints
+  - postprint
+  - postprints
+  - rights retention
+  - self-archiving
+- number: 8
+  name: Replication and meta-research
+  sub_clusters:
+  - Conducting replication studies; challenges, limitations, and comparisons with the original study
+  - Direct vs. conceptual replications
+  - Meta-analyses
+  - Meta-research
+  - Purposes of replication attempts - what is a ‘failed’ replication?
+  - Registered Replication Reports
+  - The politics of replicating famous studies
+  keywords:
+  - meta-research
+  - metascience
+  - meta-science
+  - replication study
+  - replication studies
+  - registered replication report
+  - registered replication
+  - direct replication
+  - conceptual replication
+  - many labs replication
+  - failed replication
+- number: 9
+  name: Academic Structures and Institutions
+  sub_clusters:
+  - Accessibility
+  - Citation Politics & Practices
+  - Diversity in Academia
+  - Diversity sample and generalizability
+  - Equity
+  - Feminist Thought
+  - Hidden curriculum
+  - Inclusion
+  - Multimodal barriers to communication
+  - Neurodiversity
+  - Objectivity in Research
+  - Racism in science
+  - Religion and culture
+  - Research assessment, proposals, and reforms
+  - Sexuality
+  - Socially Responsible Research
+  - Societal acceptance of appearance
+  - Structures and incentives in academia
+  keywords:
+  - neurodiversity
+  - citation politics
+  - hidden curriculum
+  - weird samples
+  - research assessment
+  - research evaluation
+  - academic incentives
+  - equity in academia
+  - diversity in academia
+  - racism in science
+- number: 10
+  name: Qualitative Research
+  sub_clusters:
+  - 'FAIR data and materials: Choosing to share your data'
+  - 'FAIR data and materials: Problem solving'
+  - Philosophical underpinnings of qualitative research
+  - Preregistration and Registered Reports
+  - Qualitative approaches to open science
+  - Reflexivity and positionality
+  - Replication research
+  - Secondary data analysis
+  - Standards and guidelines for rigorous qualitative research
+  - Transparency in qualitative research
+  keywords:
+  - qualitative research
+  - qualitative methods
+  - qualitative inquiry
+  - thematic analysis
+  - grounded theory
+  - interpretive research
+  - transparency in qualitative research
+  - reflexive thematic analysis
+- number: 11
+  name: Research Integrity
+  sub_clusters:
+  - Principles and Frameworks of Research Integrity
+  - 'Research Misconduct: Fabrication, Falsification, Plagiarism'
+  - Questionable Research Practices and Responsible Research Practices
+  - Research Culture, Incentives, and Institutional Responsibilities
+  - Publication, Peer Review, and Research Integrity
+  - Education and Training in Research Integrity
+  - Research Integrity, Social Responsibility, and Equity
+  keywords:
+  - research integrity
+  - research misconduct
+  - fabrication
+  - falsification
+  - plagiarism
+  - responsible conduct of research
+  - responsible research practices
+  - questionable research practices
+open_scholarship_keywords:
+- academic incentives
+- adversarial collaboration
+- analysis plan
+- bayesian inference
+- bayesian statistics
+- big team science
+- citation politics
+- citizen science
+- community science
+- computational reproducibility
+- conceptual replication
+- confidence interval
+- confidence intervals
+- containerisation
+- containerization
+- credibility revolution
+- data management plan
+- data repositories
+- data repository
+- data stewardship
+- diamond open access
+- direct replication
+- diversity in academia
+- effect size
+- equity in academia
+- fabrication
+- failed replication
+- fair data
+- fair data principles
+- fair principles
+- falsification
+- findable accessible interoperable reusable
+- free and open source software
+- gold open access
+- green open access
+- grounded theory
+- hidden curriculum
+- interpretive research
+- many labs
+- many labs replication
+- measurement validity
+- meta-research
+- meta-science
+- metadata standards
+- metascience
+- neurodiversity
+- nhst
+- null hypothesis significance testing
+- open access
+- open peer review
+- open scholarship
+- open science
+- open source software
+- p values
+- p-value
+- participatory research
+- plagiarism
+- positionality
+- post-publication peer review
+- postprint
+- postprints
+- pre analysis plan
+- pre registration
+- pre-analysis plan
+- pre-registration
+- preprint
+- preprints
+- preregistration
+- public engagement with science
+- qrp
+- qualitative inquiry
+- qualitative methods
+- qualitative research
+- questionable measurement practices
+- questionable research practices
+- racism in science
+- reflexive thematic analysis
+- reflexivity
+- registered replication
+- registered replication report
+- registered report
+- registered reports
+- replication
+- replication crisis
+- replication studies
+- replication study
+- reproducibility crisis
+- reproducible analysis
+- reproducible research
+- reproducible workflow
+- research assessment
+- research data management
+- research evaluation
+- research integrity
+- research misconduct
+- research software
+- research software engineering
+- responsible conduct of research
+- responsible research practices
+- rights retention
+- science communication
+- self-archiving
+- slow scholarship
+- slow science
+- statistical power
+- thematic analysis
+- transparency in qualitative research
+- weird samples

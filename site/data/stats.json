@@ -1,0 +1,557 @@
+{
+  "total_works": 21663,
+  "open_works": 2894,
+  "contributors_total": 425,
+  "contributors_with_open_work": 380,
+  "year_totals": {
+    "1851": 1,
+    "1857": 1,
+    "1860": 1,
+    "1862": 1,
+    "1886": 1,
+    "1887": 1,
+    "1888": 1,
+    "1904": 1,
+    "1909": 2,
+    "1910": 2,
+    "1911": 2,
+    "1912": 1,
+    "1914": 2,
+    "1915": 1,
+    "1916": 1,
+    "1917": 1,
+    "1918": 1,
+    "1919": 3,
+    "1920": 1,
+    "1922": 1,
+    "1925": 5,
+    "1926": 5,
+    "1927": 5,
+    "1928": 5,
+    "1929": 1,
+    "1930": 2,
+    "1931": 1,
+    "1932": 3,
+    "1933": 3,
+    "1934": 3,
+    "1935": 3,
+    "1938": 2,
+    "1939": 5,
+    "1940": 3,
+    "1942": 1,
+    "1943": 1,
+    "1945": 3,
+    "1948": 5,
+    "1949": 2,
+    "1950": 3,
+    "1951": 2,
+    "1952": 2,
+    "1953": 4,
+    "1954": 3,
+    "1955": 2,
+    "1956": 3,
+    "1959": 5,
+    "1960": 4,
+    "1962": 4,
+    "1963": 2,
+    "1964": 3,
+    "1965": 3,
+    "1966": 10,
+    "1968": 4,
+    "1969": 6,
+    "1970": 9,
+    "1971": 6,
+    "1972": 16,
+    "1973": 11,
+    "1974": 10,
+    "1975": 8,
+    "1976": 7,
+    "1977": 14,
+    "1978": 19,
+    "1979": 12,
+    "1980": 9,
+    "1981": 11,
+    "1982": 14,
+    "1983": 9,
+    "1984": 16,
+    "1985": 23,
+    "1986": 17,
+    "1987": 19,
+    "1988": 28,
+    "1989": 38,
+    "1990": 31,
+    "1991": 21,
+    "1992": 31,
+    "1993": 31,
+    "1994": 34,
+    "1995": 48,
+    "1996": 48,
+    "1997": 53,
+    "1998": 56,
+    "1999": 54,
+    "2000": 72,
+    "2001": 93,
+    "2002": 101,
+    "2003": 93,
+    "2004": 114,
+    "2005": 144,
+    "2006": 169,
+    "2007": 208,
+    "2008": 228,
+    "2009": 345,
+    "2010": 422,
+    "2011": 470,
+    "2012": 706,
+    "2013": 801,
+    "2014": 791,
+    "2015": 843,
+    "2016": 986,
+    "2017": 1205,
+    "2018": 1267,
+    "2019": 1474,
+    "2020": 1649,
+    "2021": 1788,
+    "2022": 1465,
+    "2023": 1591,
+    "2024": 1624,
+    "2025": 1737,
+    "2026": 425
+  },
+  "year_open_totals": {
+    "1998": 1,
+    "1999": 1,
+    "2000": 3,
+    "2001": 1,
+    "2002": 1,
+    "2005": 2,
+    "2006": 5,
+    "2007": 1,
+    "2008": 6,
+    "2009": 8,
+    "2010": 10,
+    "2011": 15,
+    "2012": 49,
+    "2013": 76,
+    "2014": 61,
+    "2015": 83,
+    "2016": 98,
+    "2017": 129,
+    "2018": 173,
+    "2019": 260,
+    "2020": 300,
+    "2021": 330,
+    "2022": 263,
+    "2023": 280,
+    "2024": 321,
+    "2025": 347,
+    "2026": 69
+  },
+  "cluster_counts": {
+    "1": 1489,
+    "2": 420,
+    "3": 145,
+    "4": 463,
+    "5": 102,
+    "6": 78,
+    "7": 490,
+    "8": 328,
+    "9": 93,
+    "10": 181,
+    "11": 164
+  },
+  "highlights": {
+    "most_cited": [
+      {
+        "id": "W2779812635",
+        "title": "The preregistration revolution",
+        "year": 2018,
+        "doi": "10.1073/pnas.1708274114",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "cited_by_count": 1865,
+        "clusters": [
+          4
+        ],
+        "authors": [
+          "Brian A. Nosek",
+          "Charles R. Ebersole",
+          "Alexander C. DeHaven",
+          "David Thomas Mellor"
+        ],
+        "n_authors": 4
+      },
+      {
+        "id": "W2788930055",
+        "title": "Equivalence Testing for Psychological Research: A Tutorial",
+        "year": 2018,
+        "doi": "10.1177/2515245918770963",
+        "venue": "Advances in Methods and Practices in Psychological Science",
+        "cited_by_count": 1513,
+        "clusters": [
+          2
+        ],
+        "authors": [
+          "Daniël Lakens",
+          "Anne M. Scheel",
+          "Peder Mortvedt Isager"
+        ],
+        "n_authors": 3
+      },
+      {
+        "id": "W3124333825",
+        "title": "Scientific Utopia",
+        "year": 2012,
+        "doi": "10.1177/1745691612459058",
+        "venue": "Perspectives on Psychological Science",
+        "cited_by_count": 1330,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Brian A. Nosek",
+          "Jeffrey R. Spies",
+          "Matt Motyl"
+        ],
+        "n_authors": 3
+      },
+      {
+        "id": "W1941783251",
+        "title": "Investigating Variation in Replicability",
+        "year": 2014,
+        "doi": "10.1027/1864-9335/a000178",
+        "venue": "Social Psychology",
+        "cited_by_count": 1239,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Richard Klein",
+          "Kate A. Ratliff",
+          "Michelangelo Vianello",
+          "Reginald B. Adams",
+          "Štěpán Bahník",
+          "Michael J. Bernstein"
+        ],
+        "n_authors": 51
+      },
+      {
+        "id": "W2499154041",
+        "title": "A Multilab Preregistered Replication of the Ego-Depletion Effect",
+        "year": 2016,
+        "doi": "10.1177/1745691616652873",
+        "venue": "Perspectives on Psychological Science",
+        "cited_by_count": 1101,
+        "clusters": [
+          1,
+          2,
+          8
+        ],
+        "authors": [
+          "Martin S. Hagger",
+          "Nikos L. D. Chatzisarantis",
+          "H. Alberts",
+          "Calvin Octavianus Anggono",
+          "Cédric Batailler",
+          "Angela R. Birt"
+        ],
+        "n_authors": 64
+      },
+      {
+        "id": "W2124715426",
+        "title": "Deficit, difference, or both? Autism and neurodiversity.",
+        "year": 2012,
+        "doi": "10.1037/a0028353",
+        "venue": "Developmental Psychology",
+        "cited_by_count": 1085,
+        "clusters": [
+          9
+        ],
+        "authors": [
+          "Steven K. Kapp",
+          "Kristen Gillespie‐Lynch",
+          "Lauren E. Sherman",
+          "Ted Hutman"
+        ],
+        "n_authors": 4
+      },
+      {
+        "id": "W2776961836",
+        "title": "Many Labs 2: Investigating Variation in Replicability Across Samples and Settings",
+        "year": 2018,
+        "doi": "10.1177/2515245918810225",
+        "venue": "Advances in Methods and Practices in Psychological Science",
+        "cited_by_count": 1009,
+        "clusters": [
+          1,
+          3
+        ],
+        "authors": [
+          "Richard Klein",
+          "Michelangelo Vianello",
+          "Fred Hasselman",
+          "Byron G. Adams",
+          "Reginald B. Adams",
+          "Sinan Alper"
+        ],
+        "n_authors": 100
+      },
+      {
+        "id": "W2736977076",
+        "title": "Positioning and Power in Academic Publishing: Players, Agents and Agendas",
+        "year": 2016,
+        "doi": null,
+        "venue": "IOS Press BV eBooks",
+        "cited_by_count": 998,
+        "clusters": [
+          7
+        ],
+        "authors": [
+          "Fernando Loizides",
+          "Birgit Schmidt"
+        ],
+        "n_authors": 2
+      },
+      {
+        "id": "W2751778071",
+        "title": "Constraints on Generality (COG): A Proposed Addition to All Empirical Papers",
+        "year": 2017,
+        "doi": "10.1177/1745691617708630",
+        "venue": "Perspectives on Psychological Science",
+        "cited_by_count": 970,
+        "clusters": [
+          1,
+          8
+        ],
+        "authors": [
+          "Daniel J. Simons",
+          "Yuichi Shoda",
+          "D. Stephen Lindsay"
+        ],
+        "n_authors": 3
+      },
+      {
+        "id": "W1993979041",
+        "title": "Predicting Pragmatic Reasoning in Language Games",
+        "year": 2012,
+        "doi": "10.1126/science.1218633",
+        "venue": "Science",
+        "cited_by_count": 899,
+        "clusters": [
+          2
+        ],
+        "authors": [
+          "Michael C. Frank",
+          "Noah D. Goodman"
+        ],
+        "n_authors": 2
+      }
+    ],
+    "recent": [
+      {
+        "id": "W7154760410",
+        "title": "Project Report: Responsible Academic Assessment at TU/e (v1.1)",
+        "year": 2026,
+        "doi": "10.5281/zenodo.19632789",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "cited_by_count": 0,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Andrea Kis",
+          "Julma Braat"
+        ],
+        "n_authors": 2
+      },
+      {
+        "id": "W7154824929",
+        "title": "Few-Shot EuroSAT Cross-Domain: From Everyday Photos to Satellite Imagery",
+        "year": 2026,
+        "doi": "10.5281/zenodo.19643138",
+        "venue": "Open MIND",
+        "cited_by_count": 0,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Anne Fouilloux"
+        ],
+        "n_authors": 1
+      },
+      {
+        "id": "W7154694594",
+        "title": "Project Report: Responsible Academic Assessment at TU/e",
+        "year": 2026,
+        "doi": "10.5281/zenodo.19632790",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "cited_by_count": 0,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Andrea Kis",
+          "Julma Braat"
+        ],
+        "n_authors": 2
+      },
+      {
+        "id": "W7154737183",
+        "title": "LMU Open Science Center Poster 2026",
+        "year": 2026,
+        "doi": "10.5281/zenodo.19626907",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "cited_by_count": 0,
+        "clusters": [
+          1,
+          8
+        ],
+        "authors": [
+          "Malika Ihle",
+          "Sarah von Grebmer zu Wolfsthurn",
+          "Sara Lil Middleton",
+          "Reema Gupta",
+          "Patrick Callahan",
+          "Elizabeth Waterfield"
+        ],
+        "n_authors": 8
+      },
+      {
+        "id": "W7154676779",
+        "title": "MultiAge-II Preregistration",
+        "year": 2026,
+        "doi": null,
+        "venue": "OSF Preprints (OSF Preprints)",
+        "cited_by_count": 0,
+        "clusters": [
+          4
+        ],
+        "authors": [
+          "Zlatomira Ilchovska",
+          "Angela de Bruin"
+        ],
+        "n_authors": 2
+      },
+      {
+        "id": "W7154028113",
+        "title": "Responsible Academic Assessment: From Principles to Practice (Slides)",
+        "year": 2026,
+        "doi": "10.5281/zenodo.19549740",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "cited_by_count": 0,
+        "clusters": [
+          1,
+          11
+        ],
+        "authors": [
+          "Andrea Kis",
+          "Julma Braat"
+        ],
+        "n_authors": 2
+      },
+      {
+        "id": "W7151945382",
+        "title": "Open with Care! A Framework for Responsible Qualitative Openness in the Era of AI",
+        "year": 2026,
+        "doi": "10.31219/osf.io/6z9c3_v3",
+        "venue": null,
+        "cited_by_count": 0,
+        "clusters": [
+          1,
+          10
+        ],
+        "authors": [
+          "Sarahanne Field"
+        ],
+        "n_authors": 1
+      },
+      {
+        "id": "W7151384880",
+        "title": "Planning and Agreement for Collaborative Teams (PACT): Introducing a Tool to Facilitate Research Collaboration",
+        "year": 2026,
+        "doi": "10.31222/osf.io/9kwnq_v1",
+        "venue": null,
+        "cited_by_count": 0,
+        "clusters": [
+          1
+        ],
+        "authors": [
+          "Bjørn Sætrevik",
+          "Jane Hergert",
+          "Mahmoud Medhat Elsherif",
+          "Sarah C. Kucker",
+          "Savannah C Lewis",
+          "Priya Silverstein"
+        ],
+        "n_authors": 7
+      },
+      {
+        "id": "W7148883538",
+        "title": "COmplete Reporting for Transparent Reproducibility Efforts (CORTRE): a reporting guideline [Stage 1 Registered Report]",
+        "year": 2026,
+        "doi": "10.31222/osf.io/6wj82_v1",
+        "venue": null,
+        "cited_by_count": 0,
+        "clusters": [
+          4
+        ],
+        "authors": [
+          "Rachel Heyard",
+          "Merle-Marie Pittelkow",
+          "Priya Silverstein",
+          "Olavo Bohrer Amaral",
+          "Samuel M. Gordon",
+          "Mateusz T. Wasylewski"
+        ],
+        "n_authors": 7
+      },
+      {
+        "id": "W7147107937",
+        "title": "Zotero Replication Checker",
+        "year": 2026,
+        "doi": "10.5281/zenodo.18671299",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "cited_by_count": 0,
+        "clusters": [
+          1,
+          8
+        ],
+        "authors": [
+          "Rohan Tondlekar",
+          "Lukas Wallrich",
+          "Josefina Weinerova",
+          "Anne Fouilloux",
+          "Cecilia Baldoni",
+          "Maria Meier"
+        ],
+        "n_authors": 14
+      }
+    ],
+    "top_venues": [
+      {
+        "venue": "OSF Preprints (OSF Preprints)",
+        "count": 308
+      },
+      {
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "count": 108
+      },
+      {
+        "venue": "Royal Society Open Science",
+        "count": 56
+      },
+      {
+        "venue": "Advances in Methods and Practices in Psychological Science",
+        "count": 48
+      },
+      {
+        "venue": "Figshare",
+        "count": 35
+      },
+      {
+        "venue": "PLoS ONE",
+        "count": 34
+      }
+    ],
+    "peak_year": 2025,
+    "peak_year_open_works": 347
+  }
+}
